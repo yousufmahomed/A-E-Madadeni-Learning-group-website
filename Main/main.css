@@ -9,21 +9,31 @@
     font-family: 'Source Serif Pro', serif;
     background-color: #000080;
   }
+
   
   .navbar a {
     color: #fff;
     text-decoration: none;
+  }
+
+  .navbar img {
+    filter: invert(100%);
   }
   
   .menu-nav {
     font-size: 16px;
     font-weight: bold;
   }
+
   a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: inherit;
+  }
+
+  .navbar img {
+    filter: invert(100%);
   }
   
   img {
@@ -46,7 +56,9 @@
   
   .hero-pic {
     width: 100%;
+    min-width: 50vw;
     max-width: 700px;
+    height: auto;
     margin: 30px 0;
   }
   
@@ -54,7 +66,14 @@
     width: 80%;
     text-align: center;
     margin-bottom: 30px;
-    
+  }
+
+  .second-link {
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    font-size: 1.2em;
   }
   
   .body-text p {

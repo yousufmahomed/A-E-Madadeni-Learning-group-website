@@ -25,6 +25,10 @@
     text-decoration: none;
     color: inherit;
   }
+
+    .navbar img {
+    filter: invert(100%);
+  }
   
   img {
     height: 40px;
@@ -44,10 +48,20 @@
     align-items: center;
   }
   
-  .hero-pic {
+   .hero-pic {
     width: 100%;
+    min-width: 50vw;
     max-width: 700px;
+    height: auto;
     margin: 30px 0;
+  }
+
+    .second-link {
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    font-size: 1.2em;
   }
   
   .body-text {
