@@ -68,6 +68,14 @@
     margin-bottom: 30px;
   }
 
+  .fa-brands .fa-google-drive .fa-youtube  {
+    color: black;
+  }
+  
+  .fa-solid .fa-face-laugh   {
+    color: black;
+  }
+
   .second-link {
     text-decoration: underline;
     margin-left: auto;
