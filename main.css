@@ -99,31 +99,35 @@
     align-items: center;
     padding: 1rem;
     font-family: 'Roboto', sans-serif;
-  }
-  
-  .footernote {
+}
+
+.footernote {
     margin-right: 1rem;
-  }
-  
-  .social {
+}
+
+.social-links {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .social li {
+}
+
+.social-links li {
     margin-right: 0.5rem;
-  }
-  
-  .social a {
+}
+
+.social-links a {
     color: #fff;
     font-size: 1.5rem;
-  }
-  .fa-whatsapp,
+}
+
+.fa-whatsapp,
 .fa-telegram {
     color: white;
 }
+
+  
+
 
   
   
