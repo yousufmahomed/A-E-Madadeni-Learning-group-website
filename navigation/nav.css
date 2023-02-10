@@ -50,9 +50,10 @@ img {
 .menu-nav h2 {
   color: antiquewhite;
 }
+/*FOOTER STYLES*/
 .footer {
-  background-color: 	navy;
-  color: antiquewhite;
+  background-color: navy;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,21 +65,22 @@ img {
   margin-right: 1rem;
 }
 
-.social {
+.social-links {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.social li {
+.social-links li {
   margin-right: 0.5rem;
 }
 
-.social a {
+.social-links a {
   color: #fff;
   font-size: 1.5rem;
 }
+
 .fa-whatsapp,
 .fa-telegram {
   color: white;

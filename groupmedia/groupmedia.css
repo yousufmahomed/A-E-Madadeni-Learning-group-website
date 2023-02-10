@@ -75,38 +75,40 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  .footer {
-    background-color: #be9b7b;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .footernote {
-    margin-right: 1rem;
-  }
-  
-  .social {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .social li {
-    margin-right: 0.5rem;
-  }
-  
-  .social a {
-    color: #fff;
-    font-size: 1.5rem;
-  }
-  .fa-whatsapp,
+ /*FOOTER STYLES*/
+ .footer {
+  background-color: #be9b7b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footernote {
+  margin-right: 1rem;
+}
+
+.social-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links li {
+  margin-right: 0.5rem;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.fa-whatsapp,
 .fa-telegram {
-    color: white;
+  color: white;
 }
 
   
