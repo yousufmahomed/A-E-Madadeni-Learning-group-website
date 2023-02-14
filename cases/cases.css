@@ -33,6 +33,7 @@
   img {
     height: 40px;
     margin-right: 10px;
+    color: #fff;
   }
   
   h1 {
@@ -54,6 +55,8 @@
     max-width: 700px;
     height: auto;
     margin: 30px 0;
+    border-radius: 15px;
+    box-shadow:-2px 2px 5px rgba(0, 0, 0, 0.5);
   }
 
     .second-link {
