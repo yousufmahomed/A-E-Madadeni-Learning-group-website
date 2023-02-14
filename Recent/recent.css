@@ -9,7 +9,15 @@
     font-family: 'Source Serif Pro', serif;
     background-color: #007FFF;
   }
-  
+  .navbar h2 {
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar h2:hover {
+    color: orangered;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
   .navbar a {
     color: #fff;
     text-decoration: none;
