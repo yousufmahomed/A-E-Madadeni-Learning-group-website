@@ -7,7 +7,7 @@
     background-color: #333;
     padding: 20px;
     font-family: 'Source Serif Pro', serif;
-    background-color: #36454F;
+    background-color: #007FFF;
   }
   
   .navbar a {
@@ -80,7 +80,7 @@
 
  /*FOOTER STYLES*/
  .footer {
-  background-color: #36454F;
+  background-color: #007FFF;
   color: #fff;
   display: flex;
   justify-content: space-between;
