@@ -79,6 +79,13 @@
     margin-right: auto;
     font-weight: bolder;
     font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
+  }
+  .second-link:hover {
+    color: orangered;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
   }
  
   .body-text p {
