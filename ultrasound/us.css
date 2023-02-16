@@ -1,4 +1,8 @@
 
+/*BODY STYLES*/
+body {
+  background-color: #f5f5f5;
+}
 /*Global Styles*/
 .navbar {
     display: flex;
