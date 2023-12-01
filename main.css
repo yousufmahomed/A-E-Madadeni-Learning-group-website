@@ -112,6 +112,43 @@ body {
     margin-bottom: 15px;
     font-family: 'Roboto', sans-serif;
   }
+    .body-text {
+          text-align: center; /* Centers the text inside .body-text */
+      }
+  
+      .body-text a {
+          color: #1a73e8; /* Change the link color */
+          font-weight: bold; /* Makes the link text bolder */
+          background-color: #e8f0fe; /* Adds a light background color to the link */
+          padding: 5px 10px; /* Adds some padding around the link */
+          border-radius: 5px; /* Rounds the corners of the background */
+          text-decoration: none; /* Removes the underline from the link */
+          font-size: larger; /* Increase the font size */
+      }
+  
+      .body-text a:hover {
+          background-color: #d2e3fc; /* Changes background color on hover */
+          text-decoration: underline; /* Adds underline on hover */
+      }
+      .centered-content {
+        text-align: center; /* Center-aligns the content */
+        width: 100%; /* Ensures the div takes the full width */
+    }
+
+    .centered-content a {
+        color: #1a73e8; /* Change the link color */
+        font-weight: bold; /* Makes the link text bolder */
+        background-color: #e8f0fe; /* Adds a light background color to the link */
+        padding: 5px 10px; /* Adds some padding around the link */
+        border-radius: 5px; /* Rounds the corners of the background */
+        text-decoration: none; /* Removes the underline from the link */
+        font-size: larger; /* Increase the font size */
+    }
+
+    .centered-content a:hover {
+        background-color: #d2e3fc; /* Changes background color on hover */
+        text-decoration: underline; /* Adds underline on hover */
+    }
 
   /*FOOTER STYLES*/
   .footer {
