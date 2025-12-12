@@ -1,75 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A&E Learning Group website">
-    <title>A&E Learning Group</title>
-    <link rel="stylesheet" href="nav.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/834304401a.js" async crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="shortcut icon" href="/images/learningicon.png">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A&E Learning Group website menu" />
+  <title>A&E Learning Group | Menu</title>
+
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="/images/learningicon.png" />
+  <script src="https://kit.fontawesome.com/834304401a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <header class="site-header">
     <nav class="navbar">
-      <a href="https://cdn-icons-png.flaticon.com/512/5190/5190582.png">
-        <img src="/images/learningicon.png" alt="Learning group icon"> 
-          <h1>A&E Learning Group</h1>
+      <!-- FIXED: Logo/title now goes to landing page -->
+      <a class="brand" href="/index.html" aria-label="Go to A&E Learning Group home">
+        <img src="/images/learningicon.png" alt="Learning group icon" />
+        <div class="brand-text">
+          <span class="brand-title">A&E Learning Group</span>
+          <span class="brand-subtitle">Menu</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <a class="home-btn" href="/index.html" aria-label="Home">
+          <i class="fa-solid fa-house"></i><span>Home</span>
         </a>
-        <a href="/navigation/nav.html" class="menu-nav">
-          <h2><em>MENU</em></h2>
-        </a>
-      </nav>
-      <div>
-        <ul class="navlinks">
-            <li class="link"><a href="/index.html" >Home <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-house"></i></a></li>
-            <li class="link"><a href="/Recent/recent.html">Latest Presentations <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-file-powerpoint"></i></a></li>
-            <li class="link"><a href="/twitter/twitter.html">Twitter/X Feed <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-brands fa-x-twitter"></i></a></li>
-            <li class="link"><a href="/cases/cases.html">Emergency Cases <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-notes-medical"></i></a></li>
-            <li class="link"><a href="/tutorials/tuts.html">Emergency Dept Tutorials <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-laptop-medical"></i></a></li>
-            <li class="link"><a href="/ultrasound/us.html">Emergency Bedside U/S <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-hard-drive"></i></a></li>
-            <li class="link"><a href="/radiology/rad.html">Emergency radiology <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-x-ray"></i></a></li>
-            <li class="link"><a href="/resus/resus.html">Resuscitation Tutorials <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-comment-medical"></i></a></li>
-            <li class="link"><a href="/groupmedia/groupmedia.html">Group Media <i  style="color:#008000; font-weight:bolder; font-size:larger"   class="fa-brands fa-whatsapp"></i></a></li>
-            <li class="link"><a href="/basicsecg/basics.html">ECG: Basics <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-heart-pulse"></i></a></li>
-            <li class="link"><a href="/ischaemia/ischaemia.html">ECG: Ischaemia <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-heart-circle-exclamation"></i></a></li>
-            <li class="link"><a href="/electrolyteecg/electrolyte.html">ECG: Electrolyte Disturbances <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-heart-circle-bolt"></i></a></li>
-            <li class="link"><a href="/infectionsmisc/infectionsmisc.html">ECG: Infections & Miscellaneous <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-heart-circle-minus"></i></a></li>
-            <li class="link"><a href="/arrythmias/arrythmia.html">ECG: Arrhythmias <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-heart-crack"></i></a></li>
-            <li class="link"><a href="/pulmonaryembolism/pe.html">ECG: Pulmonary Embolism <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-lungs"></i></a></li>
-            <li class="link"><a href="/toxicologyecg/toxic.html">ECG: Toxicology <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-skull-crossbones"></i></a></li>
-            <li class="link"><a href="/student/student.html">For Students <i style="color:#008000; font-weight:bolder; font-size:larger"  class="fa-solid fa-graduation-cap"></i></a></li>
-            <li class="link"><a href="/protocols/protocols.html">Protocols <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-file-pdf"></i></a></li>
-            <li class="link"><a href="/Books/books.html">Emergency Texts <i style="color:#008000; font-weight:bolder; font-size:larger" class="fa-solid fa-book"></i></a></li>
-            
-        </ul>
-    </div>
-    <script>
-        const menuButton = document.querySelector('.menu-nav');
-        const navLinks = document.querySelector('.navlinks');
-      
-        menuButton.addEventListener('click', function() {
-          navLinks.classList.toggle('active');
-        });
-      </script>
-      
-</body>
-<footer class="footer">
-  <div class="footer-content">
+
+        <button class="menu-toggle" type="button" aria-expanded="true" aria-controls="menuGrid">
+          <i class="fa-solid fa-bars"></i><span>Menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="menu-head">
+      <h1>Browse learning categories</h1>
+      <p>Tap a category to open the page. Use search to find items quickly.</p>
+
+      <div class="search-wrap">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input id="menuSearch" type="search" placeholder="Search (e.g. ECG, resus, ultrasound…)" autocomplete="off" />
+      </div>
+    </section>
+
+    <section id="menuGrid" class="menu-grid" aria-label="Menu links">
+      <!-- Keep your links exactly as they are -->
+      <a class="menu-card" href="/Recent/recent.html" data-tags="latest presentations powerpoint recent">
+        <i class="fa-solid fa-file-powerpoint"></i>
+        <div>
+          <h3>Latest Presentations</h3>
+          <p>Newest uploads and recent talks.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/twitter/twitter.html" data-tags="twitter x feed updates">
+        <i class="fa-brands fa-x-twitter"></i>
+        <div>
+          <h3>Twitter/X Feed</h3>
+          <p>Updates and quick hits.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/cases/cases.html" data-tags="cases emergency cases notes medical">
+        <i class="fa-solid fa-notes-medical"></i>
+        <div>
+          <h3>Emergency Cases</h3>
+          <p>Case-based learning from the ED.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/tutorials/tuts.html" data-tags="tutorials emergency department tutorials">
+        <i class="fa-solid fa-laptop-medical"></i>
+        <div>
+          <h3>Emergency Dept Tutorials</h3>
+          <p>Practical ED skills and topics.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/ultrasound/us.html" data-tags="ultrasound bedside us">
+        <i class="fa-solid fa-wave-square"></i>
+        <div>
+          <h3>Emergency Bedside U/S</h3>
+          <p>POCUS and ultrasound resources.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/radiology/rad.html" data-tags="radiology xray ct imaging">
+        <i class="fa-solid fa-x-ray"></i>
+        <div>
+          <h3>Emergency Radiology</h3>
+          <p>X-rays, CT basics, and patterns.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/resus/resus.html" data-tags="resuscitation resus">
+        <i class="fa-solid fa-comment-medical"></i>
+        <div>
+          <h3>Resuscitation Tutorials</h3>
+          <p>Approach, algorithms, and skills.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/groupmedia/groupmedia.html" data-tags="whatsapp media group">
+        <i class="fa-brands fa-whatsapp"></i>
+        <div>
+          <h3>Group Media</h3>
+          <p>Media shared with the learning group.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/basicsecg/basics.html" data-tags="ecg basics">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <div>
+          <h3>ECG: Basics</h3>
+          <p>Foundations and quick interpretation.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/ischaemia/ischaemia.html" data-tags="ecg ischaemia ischemia">
+        <i class="fa-solid fa-heart-circle-exclamation"></i>
+        <div>
+          <h3>ECG: Ischaemia</h3>
+          <p>STEMI/NSTEMI patterns and pitfalls.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/electrolyteecg/electrolyte.html" data-tags="ecg electrolytes potassium calcium">
+        <i class="fa-solid fa-heart-circle-bolt"></i>
+        <div>
+          <h3>ECG: Electrolyte Disturbances</h3>
+          <p>K+, Ca2+, Mg2+ patterns.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/infectionsmisc/infectionsmisc.html" data-tags="ecg infections misc">
+        <i class="fa-solid fa-heart-circle-minus"></i>
+        <div>
+          <h3>ECG: Infections & Misc</h3>
+          <p>Pericarditis, myocarditis and more.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/arrythmias/arrythmia.html" data-tags="ecg arrhythmias arrythmia">
+        <i class="fa-solid fa-heart-crack"></i>
+        <div>
+          <h3>ECG: Arrhythmias</h3>
+          <p>Fast, slow, regular, irregular.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/pulmonaryembolism/pe.html" data-tags="ecg pulmonary embolism pe">
+        <i class="fa-solid fa-lungs"></i>
+        <div>
+          <h3>ECG: Pulmonary Embolism</h3>
+          <p>Right heart strain patterns.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/toxicologyecg/toxic.html" data-tags="ecg toxicology overdose">
+        <i class="fa-solid fa-skull-crossbones"></i>
+        <div>
+          <h3>ECG: Toxicology</h3>
+          <p>Toxidromes and ECG clues.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/student/student.html" data-tags="students learning">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div>
+          <h3>For Students</h3>
+          <p>Student-friendly learning resources.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/protocols/protocols.html" data-tags="protocols pdf">
+        <i class="fa-solid fa-file-pdf"></i>
+        <div>
+          <h3>Protocols</h3>
+          <p>Local and ED protocols.</p>
+        </div>
+      </a>
+
+      <a class="menu-card" href="/Books/books.html" data-tags="books texts emergency">
+        <i class="fa-solid fa-book"></i>
+        <div>
+          <h3>Emergency Texts</h3>
+          <p>Books and reading resources.</p>
+        </div>
+      </a>
+
+      <div id="noResults" class="no-results" hidden>
+        <i class="fa-solid fa-circle-info"></i>
+        <div>
+          <strong>No matches</strong>
+          <div class="muted">Try a shorter term like “ECG”, “resus”, “US”.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
       <h3>A&E Learning Group</h3>
       <p class="footernote">Connect with us on</p>
       <ul class="social-links">
-          <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-          <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
-          <li><a href="https://twitter.com/@CMadadeni" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-          <li><a href="http://www.youtube.com/@ermentorshiphub" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a href="https://twitter.com/@CMadadeni" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a></li>
       </ul>
-  </div>
-</footer>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile collapse/expand
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const grid = document.getElementById("menuGrid");
+
+    toggleBtn.addEventListener("click", () => {
+      const isOpen = grid.classList.toggle("collapsed") === false;
+      toggleBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    // Search filter
+    const search = document.getElementById("menuSearch");
+    const cards = Array.from(document.querySelectorAll(".menu-card"));
+    const noResults = document.getElementById("noResults");
+
+    const filterCards = () => {
+      const q = search.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = (card.innerText + " " + (card.getAttribute("data-tags") || "")).toLowerCase();
+        const match = text.includes(q);
+        card.style.display = match ? "" : "none";
+        if (match) visible++;
+      });
+
+      noResults.hidden = visible !== 0;
+    };
+
+    search.addEventListener("input", filterCards);
+  </script>
+</body>
 </html>
-    
