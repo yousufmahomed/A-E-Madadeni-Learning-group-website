@@ -1,3 +1,8 @@
+/* =========================================================
+   recent.css — Latest Presentations (A&E Learning Group)
+   Clean merged file (includes responsive hero/video + footer)
+   ========================================================= */
+
 :root{
   --bg:#0b1220;
   --panel: rgba(255,255,255,0.08);
@@ -35,6 +40,7 @@ a:focus-visible{
   border-radius: 12px;
 }
 
+/* Skip link */
 .skip-link{
   position:absolute;
   left:-999px;
@@ -111,8 +117,10 @@ a:focus-visible{
   border-radius: 14px;
   background: var(--panel);
   border: 1px solid rgba(255,255,255,0.12);
+  transition: background 0.12s ease, transform 0.12s ease;
 }
-.nav-btn:hover{ background: var(--panel2); }
+.nav-btn:hover{ background: var(--panel2); transform: translateY(-1px); }
+.nav-btn:active{ transform: translateY(0); }
 
 /* Page */
 .page{
@@ -177,8 +185,10 @@ a:focus-visible{
   background: rgba(255,255,255,0.07);
   border: 1px solid rgba(255,255,255,0.12);
   box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+  transition: background 0.12s ease, transform 0.12s ease;
 }
-.cta:hover{ background: rgba(255,255,255,0.10); }
+.cta:hover{ background: rgba(255,255,255,0.10); transform: translateY(-1px); }
+.cta:active{ transform: translateY(0); }
 
 .cta i{
   width: 44px;
@@ -192,7 +202,7 @@ a:focus-visible{
   flex: 0 0 auto;
 }
 
-.cta div{ display:grid; gap: 2px; }
+.cta div{ display:grid; gap: 2px; min-width: 0; }
 .cta strong{ color: var(--text); }
 .cta span{ color: var(--muted); font-size: 0.95rem; }
 
@@ -208,9 +218,8 @@ a:focus-visible{
 }
 
 /* Video section */
-.video-section{
-  margin-top: 18px;
-}
+.video-section{ margin-top: 18px; }
+
 .section-title{
   margin: 0 0 12px;
   font-size: 1.15rem;
@@ -248,4 +257,94 @@ a:focus-visible{
   margin-top: 26px;
   border-top: 1px solid rgba(255,255,255,0.10);
   background: rgba(0,0,0,0.18);
+  padding: 18px 0;
+}
+
+.footer-content{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 16px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.footer-title{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.footer-title img{
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  padding: 6px;
+  filter: invert(100%);
+}
+
+.muted{
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.social-links{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  gap: 10px;
+  align-items:center;
+}
+
+.social-links a{
+  width: 44px;
+  height: 44px;
+  display:grid;
+  place-items:center;
+  border-radius: 14px;
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.social-links a:hover{
+  background: var(--panel2);
+  transform: translateY(-1px);
+}
+.social-links a:active{
+  transform: translateY(0);
+}
+
+/* Responsive layout */
+@media (min-width: 860px){
+  .hero{
+    grid-template-columns: 1fr 1.15fr;
+    gap: 18px;
+  }
+
+  .cta-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .video-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (min-width: 1100px){
+  .video-grid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px){
+  .footer-content{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

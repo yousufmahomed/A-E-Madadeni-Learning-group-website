@@ -1,104 +1,115 @@
-/*BODY STYLES*/
-body {
+/* =========================================================
+   Teal theme page (SCOPED)
+   Apply by adding: <body class="teal-page">
+   Prevents global clashes with other pages
+   ========================================================= */
+
+body.teal-page{
   background-color: #f5f5f5;
+  margin: 0;
 }
-/*Global Styles*/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 20px;
-    font-family: 'Source Serif Pro', serif;
-    background-color: 		#008080;
-  }
-  .navbar h2 {
-    transition: all 0.3s ease-in-out;
-  }
-  .navbar h2:hover {
-    color: orangered;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .menu-nav {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-  }
-     .navbar img {
-    filter: invert(100%);
-  }
-  img {
-    height: 40px;
-    margin-right: 10px;
-    color: #fff;
-  }
-  
-  h1 {
-    font-size: 1.5em;
-    margin: 0;
-  }
-  
 
-  /*main body*/
-  .main-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .hero-pic {
-    width: 100%;
-    min-width: 50vw;
-    max-width: 700px;
-    height: auto;
-    margin: 30px 0;
-    border-radius: 15px;
-    box-shadow:-2px 2px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  .body-text {
-    width: 80%;
-    text-align: center;
-    margin-bottom: 30px;
-    
-  }
-  .second-link {
-    text-decoration: underline;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bolder;
-    font-size: 1.2em;
-    transition: all 0.3s ease-in-out;
-  }
-  .second-link:hover {
-    color: orangered;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  
-  .body-text p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-  }
+/* Ensure images don't get globally overridden */
+body.teal-page img{ max-width: 100%; height: auto; }
 
-/*FOOTER STYLES*/
-.footer {
+/* Header / Navbar */
+body.teal-page .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Source Serif Pro', serif;
+  background-color: #008080;
+}
+
+body.teal-page .navbar a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+body.teal-page .navbar img{
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  filter: invert(100%);
+}
+
+body.teal-page .navbar h2{
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+body.teal-page .navbar h2:hover{
+  color: orangered;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Menu text */
+body.teal-page .menu-nav{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Headings (scoped) */
+body.teal-page h1{
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Main body */
+body.teal-page .main-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.teal-page .hero-pic{
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 30px 0;
+  border-radius: 15px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+body.teal-page .body-text{
+  width: min(80%, 900px);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body.teal-page .body-text p{
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Link button style */
+body.teal-page .second-link{
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bolder;
+  font-size: 1.2em;
+  transition: all 0.3s ease-in-out;
+  display: inline-block; /* keeps hover padding from stretching oddly */
+}
+
+body.teal-page .second-link:hover{
+  color: orangered;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Footer */
+body.teal-page .footer{
   background-color: #008080;
   color: #fff;
   display: flex;
@@ -108,40 +119,58 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.footernote {
+body.teal-page .footernote{
   margin-right: 1rem;
 }
 
-.social-links {
+body.teal-page .social-links{
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 0.5rem;
 }
 
-.social-links li {
-  margin-right: 0.5rem;
+body.teal-page .social-links li{
+  margin: 0; /* using gap instead */
 }
 
-.social-links a {
+body.teal-page .social-links a{
   color: #fff;
   font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
 }
 
-.fa-whatsapp,
-.fa-telegram {
-  color: white;
+body.teal-page .social-links a:hover{
+  background: rgba(255,255,255,0.15);
 }
 
-  
-  
-  /*smaller screen*/
-  @media only screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-    .menu-nav {
-      margin-top: 10px;
-    }
+/* smaller screen */
+@media only screen and (max-width: 768px){
+  body.teal-page .navbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
   }
+
+  body.teal-page .menu-nav{
+    margin-top: 10px;
+  }
+
+  body.teal-page .footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  body.teal-page .footernote{
+    margin-right: 0;
+  }
+}
