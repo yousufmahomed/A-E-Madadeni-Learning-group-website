@@ -2,28 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="ECG presentations on pericarditis and other miscellaneous conditions - A&E Learning Group" />
   <title>ECG Infections & Misc | A&E Learning Group</title>
 
-  <link rel="stylesheet" href="infectionsmisc.css" />
+  <link rel="stylesheet" href="../main.css" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="/images/learningicon.png" />
+  <link rel="shortcut icon" href="../images/learningicon.png" />
   <script src="https://kit.fontawesome.com/834304401a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <nav class="navbar">
-      <!-- FIXED: brand goes Home -->
-      <a class="brand" href="/index.html" aria-label="Go to A&E Learning Group home">
-        <img src="/images/learningicon.png" alt="Learning group icon" />
+    <nav class="navbar container">
+      <a class="brand" href="../index.html">
+        <img src="../images/learningicon.png" alt="Logo" />
         <div class="brand-text">
           <span class="brand-title">A&E Learning Group</span>
           <span class="brand-subtitle">ECG • Infections & Misc</span>
@@ -31,83 +28,80 @@
       </a>
 
       <div class="nav-actions">
-        <a class="nav-btn" href="/navigation/nav.html" aria-label="Open menu">
-          <i class="fa-solid fa-bars"></i><span>Menu</span>
-        </a>
-        <a class="nav-btn" href="/index.html" aria-label="Home">
-          <i class="fa-solid fa-house"></i><span>Home</span>
-        </a>
+        <a class="btn" href="../navigation/nav.html"><i class="fa-solid fa-bars"></i></a>
+        <a class="btn" href="../index.html"><i class="fa-solid fa-house"></i></a>
       </div>
     </nav>
   </header>
 
-  <main id="main" class="page">
-    <section class="hero">
-      <div class="hero-media" aria-label="Pericarditis illustration">
-        <img class="hero-img" src="/images/misc2.jpg" alt="An inflamed pericardium" loading="lazy" />
+  <main id="main" class="container">
+    <section class="hero" style="margin-top: 20px;">
+      <div class="hero-media glass" style="padding: 0; overflow: hidden;">
+        <img src="../images/misc2.jpg" alt="An inflamed pericardium" 
+             style="width: 100%; height: 100%; object-fit: cover;">
       </div>
 
-      <div class="hero-card">
+      <div class="hero-content glass">
         <h1>ECG: Infections & Miscellaneous</h1>
-
         <p>
-          ECG presentations on <strong>pericarditis</strong> and other miscellaneous conditions that don’t fit neatly
-          into the usual categories — but still show up in the ED.
+          Master the identification of <strong>pericarditis</strong> and other high-yield miscellaneous conditions that don’t fit into standard categories but frequently present to the ED.
         </p>
 
-        <div class="tip">
-          <i class="fa-solid fa-circle-info"></i>
+        <div class="glass" style="margin: 15px 0; padding: 15px; border-left: 4px solid var(--brand); background: rgba(90, 167, 255, 0.05);">
+          <i class="fa-solid fa-circle-info" style="color: var(--brand);"></i>
           <span>
-            If you feel lost, start with
-            <a class="inline-link" href="/basicsecg/basics.html">ECG Basics</a>.
+            Lost? Start with <a href="../basicsecg/basics.html" style="text-decoration: underline; font-weight: 700;">ECG Basics</a> first.
           </span>
         </div>
 
-        <div class="cta-grid" role="list">
-          <a class="cta primary" role="listitem"
+        <div class="grid-auto" style="margin-top: 20px;">
+          <a class="btn btn-primary" style="padding: 20px; justify-content: flex-start;"
              href="https://drive.google.com/drive/folders/1Jl-4dm2_ShNoH52wvfBuFFmnsEIuRxch?usp=share_link"
              target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-google-drive"></i>
-            <div>
-              <strong>Google Drive</strong>
-              <span>Download / re-watch easily</span>
+            <div class="icon-box" style="background: rgba(255,255,255,0.2);"><i class="fa-brands fa-google-drive"></i></div>
+            <div style="text-align: left; margin-left: 12px;">
+              <strong style="display: block;">Google Drive</strong>
+              <span style="font-size: 0.8rem; font-weight: 400; opacity: 0.8;">Download / Slides</span>
             </div>
           </a>
 
-          <a class="cta" role="listitem"
+          <a class="btn glass" style="padding: 20px; justify-content: flex-start;"
              href="https://youtube.com/playlist?list=PLDm83OQCM_lyirIEXIwMunL1syCb6szyX"
              target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-youtube"></i>
-            <div>
-              <strong>YouTube Playlist</strong>
-              <span>Stream and subscribe</span>
+            <div class="icon-box"><i class="fa-brands fa-youtube"></i></div>
+            <div style="text-align: left; margin-left: 12px;">
+              <strong style="display: block;">YouTube Playlist</strong>
+              <span style="font-size: 0.8rem; opacity: 0.8;">Watch the Tutorials</span>
             </div>
           </a>
         </div>
 
-        <p class="small-note">
-          Pericarditis tip: always think about <em>red flags</em> (hypotension, raised JVP, muffled heart sounds, large effusion)
-          and when to involve seniors early.
-        </p>
+        <div class="glass" style="margin-top: 25px; padding: 15px; background: rgba(255, 90, 90, 0.1); border-left: 4px solid #ff5a5a;">
+          <div style="display: flex; gap: 10px; align-items: flex-start;">
+            <i class="fa-solid fa-triangle-exclamation" style="color: #ff5a5a; margin-top: 4px;"></i>
+            <p style="margin: 0; font-size: 0.95rem;">
+              <strong>Pericarditis Red Flags:</strong> Always screen for Cardiac Tamponade. If you see hypotension, raised JVP, or muffled heart sounds (Beck's Triad), involve a senior immediately.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-title">
-        <img src="/images/learningicon.png" alt="" aria-hidden="true" />
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <img src="../images/learningicon.png" alt="" aria-hidden="true" />
         <div>
           <strong>A&E Learning Group</strong>
           <div class="muted">Connect with us</div>
         </div>
       </div>
-
-      <ul class="social-links" aria-label="Social links">
-        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a></li>
-        <li><a href="https://twitter.com/@CMadadeni" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+      <ul class="social-links">
+        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a href="https://twitter.com/@CMadadeni" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
       </ul>
     </div>
   </footer>

@@ -2,111 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Download Emergency Department protocols - A&E Learning Group" />
   <title>Protocols | A&E Learning Group</title>
 
-  <link rel="stylesheet" href="protocols.css" />
+  <link rel="stylesheet" href="../main.css" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="/images/learningicon.png" />
+  <link rel="shortcut icon" href="../images/learningicon.png" />
   <script src="https://kit.fontawesome.com/834304401a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <nav class="navbar">
-      <!-- FIXED: brand goes Home -->
-      <a class="brand" href="/index.html" aria-label="Go to A&E Learning Group home">
-        <img src="/images/learningicon.png" alt="Learning group icon" />
+    <nav class="navbar container">
+      <a class="brand" href="../index.html">
+        <img src="../images/learningicon.png" alt="Logo" />
         <div class="brand-text">
           <span class="brand-title">A&E Learning Group</span>
-          <span class="brand-subtitle">Protocols</span>
+          <span class="brand-subtitle">Clinical Protocols</span>
         </div>
       </a>
 
       <div class="nav-actions">
-        <a class="nav-btn" href="/navigation/nav.html" aria-label="Open menu">
-          <i class="fa-solid fa-bars"></i><span>Menu</span>
-        </a>
-        <a class="nav-btn" href="/index.html" aria-label="Home">
-          <i class="fa-solid fa-house"></i><span>Home</span>
-        </a>
+        <a class="btn" href="../navigation/nav.html"><i class="fa-solid fa-bars"></i></a>
+        <a class="btn" href="../index.html"><i class="fa-solid fa-house"></i></a>
       </div>
     </nav>
   </header>
 
-  <main id="main" class="page">
-    <section class="hero">
-      <a class="hero-media"
-         href="https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-         target="_blank" rel="noopener noreferrer"
-         aria-label="Open source image in new tab">
-        <img class="hero-img" src="/images/protocols.jpg" alt="A large stack of folders" loading="lazy" />
-      </a>
+  <main id="main" class="container">
+    <section class="hero" style="margin-top: 20px;">
+      <div class="hero-media glass" style="padding: 0; overflow: hidden;">
+        <img src="../images/protocols.jpg" alt="Protocols and folders" 
+             style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
 
-      <div class="hero-card">
+      <div class="hero-content glass">
         <h1>Protocols</h1>
+        <p>Access our current Emergency Department protocols. These are optimized for quick reference during your shifts.</p>
 
-        <p>
-          This section contains our written Emergency Department protocols.
-          You can open the folder in Google Drive and download what you need.
-        </p>
-
-        <div class="tip">
-          <i class="fa-solid fa-circle-info"></i>
-          <span>
-            Keep a few essentials available offline on your phone for on-call shifts (e.g. sepsis, asthma, DKA).
-          </span>
+        <div class="glass" style="margin: 15px 0; padding: 15px; border-left: 4px solid var(--brand); background: rgba(90, 167, 255, 0.05);">
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <i class="fa-solid fa-mobile-screen-button" style="color: var(--brand); margin-top: 4px;"></i>
+            <p style="margin: 0; font-size: 0.95rem;">
+              <strong>On-Call Tip:</strong> Save essentials (Sepsis, DKA, Asthma) to your phone's "Offline" mode so you can access them instantly even if the hospital Wi-Fi drops.
+            </p>
+          </div>
         </div>
 
-        <div class="cta-grid" role="list">
-          <a class="cta primary" role="listitem"
+        <div class="grid-auto" style="margin-top: 20px;">
+          <a class="btn btn-primary" style="padding: 20px; justify-content: flex-start;"
              href="https://drive.google.com/drive/folders/1fRXGX2JAUf3K_8wnKJAJp30O-AvUmnIM?usp=share_link"
              target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-google-drive"></i>
-            <div>
-              <strong>Open Protocols Folder</strong>
-              <span>Google Drive • view / download</span>
+            <div class="icon-box" style="background: rgba(255,255,255,0.2);"><i class="fa-brands fa-google-drive"></i></div>
+            <div style="text-align: left; margin-left: 12px;">
+              <strong style="display: block;">Google Drive</strong>
+              <span style="font-size: 0.8rem; font-weight: 400; opacity: 0.8;">View & Download PDFs</span>
             </div>
           </a>
 
-          <a class="cta" role="listitem" href="/navigation/nav.html">
-            <i class="fa-solid fa-compass"></i>
-            <div>
-              <strong>Browse Other Sections</strong>
-              <span>Back to Menu</span>
+          <a class="btn glass" style="padding: 20px; justify-content: flex-start;" href="../navigation/nav.html">
+            <div class="icon-box"><i class="fa-solid fa-compass"></i></div>
+            <div style="text-align: left; margin-left: 12px;">
+              <strong style="display: block;">Other Sections</strong>
+              <span style="font-size: 0.8rem; opacity: 0.8;">Explore Menu</span>
             </div>
           </a>
         </div>
 
-        <p class="small-note">
-          If a protocol is missing or outdated, message the group so we can update the repository.
+        <p style="margin-top: 20px; font-size: 0.85rem;" class="muted">
+          Notice an outdated protocol? Message the group immediately so we can update the repository.
         </p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-title">
-        <img src="/images/learningicon.png" alt="" aria-hidden="true" />
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <img src="../images/learningicon.png" alt="" aria-hidden="true" />
         <div>
           <strong>A&E Learning Group</strong>
           <div class="muted">Connect with us</div>
         </div>
       </div>
-
-      <ul class="social-links" aria-label="Social links">
-        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a></li>
-        <li><a href="https://twitter.com/@CMadadeni" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+      <ul class="social-links">
+        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a href="https://twitter.com/@CMadadeni" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
       </ul>
     </div>
   </footer>

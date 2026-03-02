@@ -7,12 +7,13 @@
   <meta name="description" content="A&E Learning Group website" />
   <title>A&E Learning Group</title>
 
-  <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="main.css">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="/images/learningicon.png" />
+  <link rel="shortcut icon" href="images/learningicon.png" />
   <script src="https://kit.fontawesome.com/834304401a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,117 +21,96 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <nav class="navbar">
-      <a class="brand" href="/index.html" aria-label="A&E Learning Group home">
-        <img src="/images/learningicon.png" alt="A&E Learning Group icon" />
+    <nav class="navbar container"> <a class="brand" href="index.html" aria-label="A&E Learning Group home">
+        <img src="images/learningicon.png" alt="A&E Learning Group icon" />
         <div class="brand-text">
           <span class="brand-title">A&E Learning Group</span>
           <span class="brand-subtitle">Madadeni • Junior doctor learning</span>
         </div>
       </a>
 
-      <a class="menu-button" href="navigation/nav.html" aria-label="Open menu">
-        <i class="fa-solid fa-bars"></i>
+      <a class="btn" href="navigation/nav.html"> <i class="fa-solid fa-bars"></i>
         <span>Menu</span>
       </a>
     </nav>
   </header>
 
-  <main id="main" class="page">
-    <!-- HERO -->
-    <section class="hero" aria-label="Welcome">
+  <main id="main" class="container"> <section class="hero" aria-label="Welcome">
       <div class="hero-media" role="img" aria-label="A busy emergency department"></div>
 
-      <div class="hero-content">
-        <h1>Learn smarter in the Emergency Department</h1>
+      <div class="hero-content glass"> <h1>Learn smarter in the Emergency Department</h1>
         <p>
           This site organizes our teaching sessions into clear categories with quick links to playlists,
           protocols, and downloads.
         </p>
 
         <div class="hero-actions">
-          <a class="btn primary" href="navigation/nav.html">
-            <i class="fa-solid fa-compass"></i> Browse categories
+          <a class="btn btn-primary" href="navigation/nav.html"> <i class="fa-solid fa-compass"></i> Browse categories
           </a>
-          <a class="btn ghost" href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-youtube"></i> ER Mentorship Hub
+          <a class="btn btn-ghost" href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube"></i> YouTube
           </a>
         </div>
 
-        <div class="hero-note">
-          <i class="fa-solid fa-circle-info"></i>
+        <div class="hero-note glass" style="margin-top: 20px; padding: 15px;"> <i class="fa-solid fa-circle-info" style="color: var(--brand);"></i>
           <span>
-            Tip: The <strong>first link</strong> on most pages is Google Drive (easy downloads). The <strong>second link</strong> is YouTube.
+            Tip: The <strong>first link</strong> on most pages is Google Drive. The <strong>second link</strong> is YouTube.
           </span>
         </div>
       </div>
     </section>
 
-    <!-- QUICK LINKS / CARDS -->
-    <section class="section">
+    <section class="section" style="margin-top: 40px;">
       <h2 class="section-title">Quick links</h2>
 
-      <div class="cards">
-        <article class="card">
-          <div class="card-icon">
-            <i class="fa-brands fa-youtube"></i>
+      <div class="grid-auto"> <article class="card glass"> <div class="icon-box"> <i class="fa-brands fa-youtube"></i>
           </div>
           <h3>Teaching videos</h3>
           <p>Playlists and short focused teaching for junior doctors.</p>
-          <a class="resource-link" href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer">
-            Go to ER Mentorship Hub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <a class="btn btn-ghost" href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+            Open YouTube
           </a>
         </article>
 
-        <article class="card">
-          <div class="card-icon">
+        <article class="card glass">
+          <div class="icon-box">
             <i class="fa-brands fa-whatsapp"></i>
           </div>
           <h3>WhatsApp group</h3>
           <p>Get notified when new sessions and resources are added.</p>
-          <a class="resource-link" href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank" rel="noopener noreferrer">
-            Join WhatsApp <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <a class="btn btn-ghost" href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+            Join WhatsApp
           </a>
         </article>
 
-        <article class="card">
-          <div class="card-icon">
+        <article class="card glass">
+          <div class="icon-box">
             <i class="fa-brands fa-telegram"></i>
           </div>
           <h3>Telegram group</h3>
           <p>Alternative updates channel if you prefer Telegram.</p>
-          <a class="resource-link" href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank" rel="noopener noreferrer">
-            Join Telegram <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <a class="btn btn-ghost" href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+            Join Telegram
           </a>
         </article>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="section">
       <h2 class="section-title">How this site works</h2>
-
-      <div class="prose">
-        <p>
+      <div class="glass" style="padding: 20px;"> <p>
           Over the years, Madadeni A&E has hosted many learning sessions. This website helps keep them organised,
           easier to find, and clearly labelled.
-        </p>
-        <p>
-          Feel free to watch on YouTube and download from Google Drive — whatever works best for you.
-          Feedback is welcome.
         </p>
       </div>
     </section>
 
-    <!-- INTRO VIDEO -->
-    <section class="section">
+    <section class="section" style="padding-bottom: 50px;">
       <h2 class="section-title">Intro video</h2>
-      <div class="video-wrap">
-        <iframe
+      <div class="video-wrap glass"> <iframe
           src="https://www.youtube.com/embed/HYHwmYTxlU0"
           title="A&E Learning Group Intro"
           loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
       </div>
@@ -138,9 +118,8 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="/images/learningicon.png" alt="" aria-hidden="true" />
+    <div class="footer-inner container"> <div class="footer-brand">
+        <img src="images/learningicon.png" alt="" aria-hidden="true" />
         <div>
           <strong>A&E Learning Group</strong>
           <div class="muted">Connect with us</div>
@@ -148,10 +127,10 @@
       </div>
 
       <ul class="social-links" aria-label="Social links">
-        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a></li>
-        <li><a href="https://twitter.com/@CMadadeni" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a href="https://twitter.com/@CMadadeni" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a></li>
       </ul>
     </div>
   </footer>

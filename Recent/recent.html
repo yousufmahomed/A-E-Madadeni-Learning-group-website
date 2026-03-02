@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Latest presentations - A&E Learning Group" />
+  <meta name="description" content="Latest clinical presentations and teaching sessions - A&E Learning Group" />
   <title>Latest Presentations | A&E Learning Group</title>
 
-  <link rel="stylesheet" href="recent.css" />
+  <link rel="stylesheet" href="../main.css" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="/images/learningicon.png" />
+  <link rel="shortcut icon" href="../images/learningicon.png" />
   <script src="https://kit.fontawesome.com/834304401a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <nav class="navbar" aria-label="Primary">
-      <a class="brand" href="/index.html" aria-label="Go to A&E Learning Group home">
-        <img src="/images/learningicon.png" alt="A&E Learning Group icon" />
+    <nav class="navbar container">
+      <a class="brand" href="../index.html">
+        <img src="../images/learningicon.png" alt="Logo" />
         <div class="brand-text">
           <span class="brand-title">A&E Learning Group</span>
           <span class="brand-subtitle">Latest Presentations</span>
@@ -30,140 +28,85 @@
       </a>
 
       <div class="nav-actions">
-        <a class="nav-btn" href="/navigation/nav.html" aria-label="Open menu">
-          <i class="fa-solid fa-bars" aria-hidden="true"></i><span>Menu</span>
-        </a>
-        <a class="nav-btn" href="/index.html" aria-label="Home">
-          <i class="fa-solid fa-house" aria-hidden="true"></i><span>Home</span>
-        </a>
+        <a class="btn" href="../navigation/nav.html"><i class="fa-solid fa-bars"></i></a>
+        <a class="btn" href="../index.html"><i class="fa-solid fa-house"></i></a>
       </div>
     </nav>
   </header>
 
-  <main id="main" class="page">
-    <section class="hero" aria-label="Latest presentations hero">
-      <div class="hero-media" aria-label="YouTube">
-        <img class="hero-img" src="/images/yt_logo.png" alt="YouTube logo" loading="lazy" />
+  <main id="main" class="container">
+    <section class="hero" style="margin-top: 20px;">
+      <div class="hero-media glass" style="padding: 0; overflow: hidden;">
+        <img src="../images/yt_logo.png" alt="YouTube Learning" 
+             style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
       </div>
 
-      <div class="hero-card">
+      <div class="hero-content glass">
         <h1>Latest Presentations</h1>
-        <p>Go straight to our most recent presentations playlist on YouTube.</p>
+        <p>Go straight to our most recent clinical uploads. Subscribe to the hub to get notified of new sessions.</p>
 
-        <div class="cta-grid" role="list">
-          <a class="cta primary" role="listitem"
+        <div class="grid-auto" style="margin-top: 20px;">
+          <a class="btn btn-primary" style="padding: 20px; justify-content: flex-start;"
              href="https://youtube.com/playlist?list=PLDm83OQCM_lxOFVC1EEpiqe1kfqL4W_PG"
              target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-            <div>
-              <strong>Open playlist</strong>
-              <span>Most recent uploads</span>
+            <div class="icon-box" style="background: rgba(255,255,255,0.2);"><i class="fa-brands fa-youtube"></i></div>
+            <div style="text-align: left; margin-left: 12px;">
+              <strong style="display: block;">Open Playlist</strong>
+              <span style="font-size: 0.8rem; font-weight: 400; opacity: 0.9;">Most Recent Uploads</span>
             </div>
           </a>
 
-          <a class="cta" role="listitem"
+          <a class="btn glass" style="padding: 20px; justify-content: flex-start;"
              href="https://www.youtube.com/@ermentorshiphub"
              target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-            <div>
-              <strong>ER Mentorship Hub</strong>
-              <span>Subscribe for updates</span>
+            <div class="icon-box"><i class="fa-brands fa-youtube"></i></div>
+            <div style="text-align: left; margin-left: 12px;">
+              <strong style="display: block;">ER Mentorship Hub</strong>
+              <span style="font-size: 0.8rem; opacity: 0.8;">Subscribe for Updates</span>
             </div>
           </a>
         </div>
-
-        <p class="small-note">
-          Below are the latest videos embedded for quick viewing (mobile-friendly).
-        </p>
       </div>
     </section>
 
-    <section class="video-section" aria-label="Latest embedded videos">
-      <h2 class="section-title">Watch the latest videos</h2>
-
-      <div class="video-grid">
-
-        <article class="video-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/uIcm_epz-Ps?si=aZ6vj1a_NiKvJdZS"
-              title="Latest video 1"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <section style="margin-top: 40px; padding-bottom: 60px;">
+      <h2 style="margin-bottom: 20px; font-size: 1.4rem;">Recently Added Videos</h2>
+      
+      <div class="grid-auto">
+        
+        <article class="glass" style="padding: 10px;">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/uIcm_epz-Ps" title="Video 1" allowfullscreen></iframe>
           </div>
         </article>
 
-        <article class="video-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/pY6oMzDxjlk?si=Ai4DJRh71BZpmyK4"
-              title="Latest video 2"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <article class="glass" style="padding: 10px;">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/pY6oMzDxjlk" title="Video 2" allowfullscreen></iframe>
           </div>
         </article>
 
-        <article class="video-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/KSWeeSXHzHA?si=7W2HOFwqW5N7qM9j"
-              title="Latest video 3"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <article class="glass" style="padding: 10px;">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/KSWeeSXHzHA" title="Video 3" allowfullscreen></iframe>
           </div>
         </article>
 
-        <article class="video-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/v77qKLOCzKI?si=dKSs6YbgzwDpP0BF"
-              title="Latest video 4"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <article class="glass" style="padding: 10px;">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/v77qKLOCzKI" title="Video 4" allowfullscreen></iframe>
           </div>
         </article>
 
-        <article class="video-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/WVK2Ic2txu0?si=28zPcf6RxJw07jX3"
-              title="Latest video 5"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <article class="glass" style="padding: 10px;">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/WVK2Ic2txu0" title="Video 5" allowfullscreen></iframe>
           </div>
         </article>
 
-        <article class="video-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/Q9ejmlWFDEc?si=11-C2v-Vscj0ESkQ"
-              title="Latest video 6"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/6jgzNqHz1iA?si=K2UofXANnPXUqLoP"
-              title="Latest video 7"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <article class="glass" style="padding: 10px;">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/Q9ejmlWFDEc" title="Video 6" allowfullscreen></iframe>
           </div>
         </article>
 
@@ -172,36 +115,19 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-title">
-        <img src="/images/learningicon.png" alt="" aria-hidden="true" />
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <img src="../images/learningicon.png" alt="" aria-hidden="true" />
         <div>
           <strong>A&E Learning Group</strong>
           <div class="muted">Connect with us</div>
         </div>
       </div>
-
-      <ul class="social-links" aria-label="Social links">
-        <li>
-          <a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-            <i class="fa-brands fa-telegram" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/CMadadeni" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
-            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-          </a>
-        </li>
+      <ul class="social-links">
+        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a href="https://twitter.com/CMadadeni" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
       </ul>
     </div>
   </footer>

@@ -2,28 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Emergency medicine textbooks and reading resources - A&E Learning Group" />
   <title>Emergency Texts | A&E Learning Group</title>
 
-  <link rel="stylesheet" href="/Books/books.css" />
+  <link rel="stylesheet" href="../main.css" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="/images/learningicon.png" />
+  <link rel="shortcut icon" href="../images/learningicon.png" />
   <script src="https://kit.fontawesome.com/834304401a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <nav class="navbar">
-      <!-- FIXED: brand goes Home -->
-      <a class="brand" href="/index.html" aria-label="Go to A&E Learning Group home">
-        <img src="/images/learningicon.png" alt="Learning group icon" />
+    <nav class="navbar container">
+      <a class="brand" href="../index.html">
+        <img src="../images/learningicon.png" alt="Logo" />
         <div class="brand-text">
           <span class="brand-title">A&E Learning Group</span>
           <span class="brand-subtitle">Resources • Emergency Texts</span>
@@ -31,72 +28,65 @@
       </a>
 
       <div class="nav-actions">
-        <a class="nav-btn" href="/navigation/nav.html" aria-label="Open menu">
-          <i class="fa-solid fa-bars"></i><span>Menu</span>
-        </a>
-        <a class="nav-btn" href="/index.html" aria-label="Home">
-          <i class="fa-solid fa-house"></i><span>Home</span>
-        </a>
+        <a class="btn" href="../navigation/nav.html"><i class="fa-solid fa-bars"></i></a>
+        <a class="btn" href="../index.html"><i class="fa-solid fa-house"></i></a>
       </div>
     </nav>
   </header>
 
-  <main id="main" class="page">
-    <section class="hero">
-      <a class="hero-media"
-         href="https://wdmarchitects.com/wp-content/uploads/2018/02/Public-Libraries-Relevancy-in-the-Modern-World-Featured.jpg"
-         target="_blank" rel="noopener noreferrer"
-         aria-label="Open source image in new tab">
-        <img class="hero-img" src="/images/Library.jpg" alt="A library with books" loading="lazy" />
-      </a>
+  <main id="main" class="container">
+    <section class="hero" style="margin-top: 20px;">
+      <div class="hero-media glass" style="padding: 0; overflow: hidden;">
+        <img src="../images/Library.jpg" alt="A library with books" 
+             style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
 
-      <div class="hero-card">
+      <div class="hero-content glass">
         <h1>Emergency Texts</h1>
-        <p>
-          A growing repository of emergency medicine texts to support your learning and clinical decision-making.
-        </p>
+        <p>A growing repository of core Emergency Medicine textbooks to support your learning and clinical decision-making on the floor.</p>
 
-        <div class="cta-grid" role="list">
-          <a class="cta primary" role="listitem"
+        <div style="margin-top: 20px;">
+          <a class="btn btn-primary" style="padding: 24px; width: 100%; justify-content: flex-start;"
              href="https://drive.google.com/drive/folders/1ampDY-TjdZvp8DFN4CuF_rQwi9S6_6pD?usp=sharing"
              target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-google-drive"></i>
-            <div>
-              <strong>Open Google Drive Folder</strong>
-              <span>Browse and download books</span>
+            <div class="icon-box" style="background: rgba(255,255,255,0.2);"><i class="fa-brands fa-google-drive"></i></div>
+            <div style="text-align: left; margin-left: 15px;">
+              <strong style="display: block; font-size: 1.2rem;">Open Google Drive</strong>
+              <span style="font-size: 0.9rem; font-weight: 400; opacity: 0.8;">Browse and download textbooks</span>
             </div>
           </a>
         </div>
 
-        <div class="tip">
-          <i class="fa-solid fa-lightbulb"></i>
-          <span>
-            Download what you need while on Wi-Fi, then read offline during quiet moments on shift.
-          </span>
+        <div class="glass" style="margin-top: 25px; padding: 15px; background: rgba(124, 92, 255, 0.1); border-left: 4px solid #7c5cff;">
+          <div style="display: flex; gap: 10px; align-items: flex-start;">
+            <i class="fa-solid fa-lightbulb" style="color: #7c5cff; margin-top: 4px;"></i>
+            <p style="margin: 0; font-size: 0.95rem;">
+              <strong>Pro Tip:</strong> Download core texts while on Wi-Fi so you can access them offline during quiet moments on shift.
+            </p>
+          </div>
         </div>
 
-        <p class="small-note">
-          If you notice a missing book that juniors should have, message the group and we’ll add it.
+        <p style="margin-top: 20px; font-size: 0.85rem;" class="muted">
+          Missing a core book? Message the group and we’ll add it to the repository.
         </p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-title">
-        <img src="/images/learningicon.png" alt="" aria-hidden="true" />
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <img src="../images/learningicon.png" alt="" aria-hidden="true" />
         <div>
           <strong>A&E Learning Group</strong>
           <div class="muted">Connect with us</div>
         </div>
       </div>
-
-      <ul class="social-links" aria-label="Social links">
-        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a></li>
-        <li><a href="https://twitter.com/@CMadadeni" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+      <ul class="social-links">
+        <li><a href="https://chat.whatsapp.com/GReC7EIpuj28wT7go8rGEw" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="https://t.me/+Oauwmc7ynVNmYjc0" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a href="https://twitter.com/@CMadadeni" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/@ermentorshiphub" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
       </ul>
     </div>
   </footer>
