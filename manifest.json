@@ -1,0 +1,17 @@
+{
+  "name": "A&E Learning Directory",
+  "short_name": "A&E Learning",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0056b3",
+  "description": "Emergency Medicine literature, topics, and video directory.",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
